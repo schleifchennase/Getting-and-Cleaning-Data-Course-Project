@@ -56,6 +56,6 @@ Hadley Wickham describes messy data as: "
                 
 Therefore column headers have been made descriptive all variables are stored in their own column, variables are stored only in columns. The dataset has been splitted by activity to multiple tables stored in a list not to have multiple types of observational units stored in one table.
 
-** Result
+## Result
 
 A file named human_activity_dataset_summary is stored in the working directory and can be read into R by read.table("./human_activity_dataset_summary", header=TRUE)
