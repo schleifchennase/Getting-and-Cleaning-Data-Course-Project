@@ -88,4 +88,4 @@ human_activity_dataset_df <- group_by(human_activity_dataset_df, activity,subjec
 human_activity_dataset_summary <- summarize_at(human_activity_dataset_df, vars(3:67), mean)
 
 # 10 Output file
-write.table(human_activity_dataset_summary, "./human_activity_dataset_summary")
+write.table(human_activity_dataset_summary, "./human_activity_dataset_summary", row.name=FALSE)
