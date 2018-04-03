@@ -19,6 +19,7 @@ To run the R script you should
 ## Approach
 
 1. Merge the training and the test sets to create one data set.
+        
         1.1 Read files from the unzipped folder "UCI HAR" Dataset in your current working directory.
         1.2 Create a test data set
                 1.2.1 Add feature list labels to test_measurements
@@ -29,25 +30,30 @@ To run the R script you should
         1.4 Merge both datasets
                 
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
+        
         2.1 Merge training dataset and test_dataset into one
         2.2 Select Columns which contain "mean" and "std" in their names to get only data with means and standard deviation
         
 3. Uses descriptive activity names to name the activities in the data set
+        
         3.1 add verbose activity names
         
 4. Appropriately labels the data set with descriptive variable names.
         4.1 Names in Datasets should be:
+        
                 * all to lower case -> names changed to lower case
                 * descriptive -> codes replaced by labels
                 * Not duplicated -> no duplicates exist
                 * Not have underscores, dots or white spaces -> underscores, dots, white spaces and brackets removed and "-" removed
                 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
         5.1 group dataset by activity and subject
         5.2 calculate mean by activity and subject
         5.3 Split table by activity
 
-Hadley Wickham describes messy data as: "
+Hadley Wickham describes messy data as: 
+
        "        * Column headers are values, not variable names.
                 * Multiple variables are stored in one column.
                 * Variables are stored in both rows and columns.
